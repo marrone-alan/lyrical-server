@@ -8,7 +8,8 @@ defmodule LyricalElixirWeb.Resolvers.Lyrics do
     song = LyricalElixir.Lyrical.get_song!(id)
     case LyricalElixir.Lyrical.create_lyric(%{:content => content}, song) do
       {:ok, lyric} ->
-        {:ok, lyric}
+        updatedSong = LyricalElixir.Lyrical.get_song!(id)
+        {:ok, updatedSong}
       _error ->
         {:error, "could not create lyric"}
     end

@@ -5,7 +5,7 @@ config :lyrical_elixir, LyricalElixir.Repo,
   username: "root",
   password: "142536",
   database: "lyrical_elixir_dev",
-  hostname: "10.20.0.3",
+  hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 

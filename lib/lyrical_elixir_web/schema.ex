@@ -38,7 +38,7 @@ defmodule LyricalElixirWeb.Schema do
       resolve &Resolvers.Songs.delete_song/3
     end
 
-    field :add_lyrics_to_song, :lyric do
+    field :add_lyrics_to_song, :song do
       arg :id, non_null(:id)
       arg :content, non_null(:string)
 

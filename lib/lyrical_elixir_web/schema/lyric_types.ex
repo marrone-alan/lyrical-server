@@ -5,5 +5,6 @@ defmodule LyricalElixirWeb.Schema.LyricTypes do
     field :id, :id
     field :likes, :integer
     field :content, :string
+    field :songs, list_of(:song)
   end
 end

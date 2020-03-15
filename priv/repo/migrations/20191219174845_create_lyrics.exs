@@ -3,7 +3,7 @@ defmodule LyricalElixir.Repo.Migrations.CreateLyrics do
 
   def change do
     create table(:lyrics) do
-      add :likes, :integer
+      add :likes, :integer, default: 0
       add :content, :string
 
       timestamps()
